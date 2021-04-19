@@ -40,7 +40,8 @@ public class Producto implements Serializable {
     
     private String name;
     private Double price;
-    private String description; @ManyToOne(cascade=ALL)
+    private String description; 
+    @ManyToOne(cascade=ALL)
     private Competitor competitor;
     
     public Producto() {
@@ -91,7 +92,7 @@ public class Producto implements Serializable {
         return description;
     }
 
-    public void setDescrption(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 }
